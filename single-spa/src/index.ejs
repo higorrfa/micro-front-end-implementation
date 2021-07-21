@@ -25,28 +25,21 @@
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js" as="script">
 
   <% if (isLocal) { %>
-    <script type="systemjs-importmap">
-    {
-      "imports": {
-        "@virtus-easy/root-config": "//localhost:9000/virtus-easy-root-config.js",
-        "@virtus-easy/react-counter": "//localhost:8082/virtus-easy-react-counter.js",
-        "@virtus-easy/react-todo-list": "//localhost:8083/virtus-easy-react-todo-list.js",
-        "@virtus-easy/react-mega": "//localhost:8081/virtus-easy-react-mega.js"  
-      }
-    }
-  </script>
-    <% } %>
+    <script type="systemjs-importmap" src="https://micro-front-end-implementation.nyc3.digitaloceanspaces.com/importmap.development.json"></script>
+  <% } else { %>
+    <script type="systemjs-importmap" src="https://micro-front-end-implementation.nyc3.digitaloceanspaces.com/importmap.production.json"></script>
+  <% } %>
 
       <script src="https://cdn.jsdelivr.net/npm/zone.js@0.11.3/dist/zone.min.js"></script>
-
       <script src="https://cdn.jsdelivr.net/npm/import-map-overrides@2.2.0/dist/import-map-overrides.js"></script>
+
       <% if (isLocal) { %>
         <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.js"></script>
-        <% } else { %>
-          <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
-          <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
-          <% } %>
+      <% } else { %>
+        <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/extras/amd.min.js"></script>
+      <% } %>
 </head>
 
 <body>

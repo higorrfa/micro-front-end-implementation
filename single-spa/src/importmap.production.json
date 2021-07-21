@@ -1,0 +1,8 @@
+{
+    "imports": {
+        "@virtus-easy/root-config": "https://micro-front-end-implementation.nyc3.digitaloceanspaces.com/virtus-easy-root-config.js",
+        "@virtus-easy/react-counter": "https://micro-front-end-implementation.nyc3.digitaloceanspaces.com/virtus-easy-react-counter.js",
+        "@virtus-easy/react-todo-list": "https://micro-front-end-implementation.nyc3.digitaloceanspaces.com/virtus-easy-react-todo-list.js",
+        "@virtus-easy/react-mega": "https://micro-front-end-implementation.nyc3.digitaloceanspaces.com/virtus-easy-react-mega.js"
+    }
+}

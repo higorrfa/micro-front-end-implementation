@@ -1,0 +1,8 @@
+{
+    "imports": {
+        "@virtus-easy/root-config": "htttp://localhost:9000/virtus-easy-root-config.js",
+        "@virtus-easy/react-counter": "htttp://localhost:8082/virtus-easy-react-counter.js",
+        "@virtus-easy/react-todo-list": "htttp://localhost:8083/virtus-easy-react-todo-list.js",
+        "@virtus-easy/react-mega": "htttp://localhost:8081/virtus-easy-react-mega.js"
+    }
+}

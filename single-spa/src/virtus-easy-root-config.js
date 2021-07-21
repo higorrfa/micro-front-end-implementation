@@ -46,7 +46,7 @@ import { registerApplication, start } from "single-spa";
 //   urlRerouteOnly: true,
 // });
 
-fetch('https://run.mocky.io/v3/b111500f-baf2-4d74-9882-7ef773a9b736')
+fetch('https://app.fakejson.com/q/48b6QP6Q?token=5oeHWbuccpakxvzCdzIiKw')
   .then(resp => resp.json())
   .then(data => {
     data.applications.forEach(app => {
